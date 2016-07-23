@@ -10,8 +10,10 @@
   font-size: 25px;
   color: gray;
   text-align: justify;
+  overflow: hidden;
 }
 #line{
   border-top-style: groove;
   border-top-width: 1px;
+  overflow: hidden;
 }
