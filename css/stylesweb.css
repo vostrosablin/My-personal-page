@@ -1,0 +1,17 @@
+.frontend{
+  background-image: url(../img/front-end.jpg);
+  background-size: cover !important;
+  height: 490px;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+.center{
+  font-size: 25px;
+  color: gray;
+  text-align: justify;
+}
+#line{
+  border-top-style: groove;
+  border-top-width: 1px;
+}
