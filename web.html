@@ -44,8 +44,9 @@
 
 <div class="row">
 <div class="col-sm-4 col-sm-offset-1">
-  <h1 class="center"> Lorem ipsum dolor sit amet, te eos magna postulant dissentiet, vix falli iriure epicurei id, nonumy
-    aperiri virtute eam cu. Ea iuvaret utroque vel, an usu simul dictas contentiones. </h1>
+  <h1 class="center scroll-btn"> My experience is not quite high for the moment but still I'm able to make some fancy websites. The one you
+  are currently on is a good example of my possibilties. I have some main knowledge about the responsive design and I'm always continue
+to study new technologies of the web developement. </h1>
 </div>
 <div class="col-sm-6 col-sm-offset-1 frontend">
 </div>
@@ -105,6 +106,20 @@ $(document).ready(function () {
  $('div.hidden').fadeIn(3000).removeClass('hidden');
  $('img.hidden').fadeIn(3000).removeClass('hidden');
 });
+
+$(document).ready(
+  function DocumentLoad()
+  {
+    $(window).scroll(scrollBtn);
+    // scrollBtn();
+  });
+
+function scrollBtn(){
+   if ( $(window).scrollTop() > 100 )
+        $('.scroll-btn').fadeIn(1000);
+      else
+        $('.scroll-btn').fadeOut(1000);
+      };
 </script>
 
 
