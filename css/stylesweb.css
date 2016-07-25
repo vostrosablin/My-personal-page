@@ -1,7 +1,7 @@
 .frontend{
   background-image: url(../img/front-end.jpg);
   background-size: cover !important;
-  height: 490px;
+  height: 280px;
   background-attachment: fixed;
   position: relative;
   overflow: hidden;
@@ -12,8 +12,21 @@
   text-align: justify;
   overflow: hidden;
 }
+.center1{
+  font-size: 40px;
+  color: gray;
+  text-align: justify;
+  overflow: hidden;
+}
 #line{
   border-top-style: groove;
   border-top-width: 1px;
   overflow: hidden;
+}
+#skills{
+  height: 120px;
+  width: 120px;
+}
+ul li a{
+  color: gray;
 }

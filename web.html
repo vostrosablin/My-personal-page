@@ -44,7 +44,7 @@
 
 <div class="row">
 <div class="col-sm-4 col-sm-offset-1">
-  <h1 class="center scroll-btn"> My experience is not quite high for the moment but still I'm able to make some fancy websites. The one you
+  <h1 class="center"> My experience is not quite high for the moment but still I'm able to make some fancy websites. The one you
   are currently on is a good example of my possibilties. I have some main knowledge about the responsive design and I'm always continue
 to study new technologies of the web developement. </h1>
 </div>
@@ -52,7 +52,118 @@ to study new technologies of the web developement. </h1>
 </div>
 </div>
 
-  <p style="padding-top:220px"></p>
+  <p style="padding-top:100px"></p>
+
+<div class="row scroll-btn2">
+  <div class="col-sm-1 col-sm-offset-1 ">
+         <img  class="round-img " src="img/skills.png" id="skills"/>
+ </div>
+ <div class="col-sm-5">
+<h1 class="center1" style="padding-top:20px;">Skills and Techniques</h1>
+ </div>
+</div>
+
+  <p style="padding-top:100px"></p>
+
+<div class="row scroll-btn2">
+ <div class="col-sm-10 col-sm-offset-1">
+
+ <h2 style="color:gray;"> <i class="fa fa-rocket" aria-hidden="true"></i> Development</h2>
+
+ </div>
+</div>
+
+  <p style="padding-top:20px"></p>
+
+<div class="row scroll-btn2">
+  <div class="col-sm-10 col-sm-offset-1">
+  <ul class="nav nav-tabs">
+   <li class="active"><a href="#a" data-toggle="tab">HTML5</a></li>
+   <li><a href="#b" data-toggle="tab">CSS3</a></li>
+   <li><a href="#c" data-toggle="tab">JavaScript</a></li>
+   <li><a href="#d" data-toggle="tab">jQuery</a></li>
+   <li><a href="#e" data-toggle="tab">AngularJS</a></li>
+  <li><a href="#f" data-toggle="tab">Bootstrap</a></li>
+   <li><a href="#g" data-toggle="tab">Git, GitHub</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <p style="padding-top:20px"></p>
+  <div class="tab-pane active" id="a">
+              <div class="row">
+                <div class="col-sm-1"><img src="img/html5.png" style="height:100px; position:absolute; margin-left:-10px;" /></div>
+                <div class="col-sm-6" style="padding-top:10px; color: gray; font-size:20px;"> I understand the basics of the HTML5,
+                  its DOM structure and how to operate with it</div>
+              </div>
+  </div>
+  <div class="tab-pane" id="b">  <div class="row">
+      <div class="col-sm-1"><img src="img/css3.png" style="height:110px; position:absolute; margin-left:-10px; padding-top:-4px;" /></div>
+      <div class="col-sm-6" style="padding-top:10px; color: gray; font-size:20px;"> I am capable to make styles with CSS. Also I had
+      a small experience with CSS preprocessors such as SASS and LESS but not too much </div>
+    </div></div>
+  <div class="tab-pane" id="c">...</div>
+  <div class="tab-pane" id="d">...</div>
+  <div class="tab-pane" id="e">...</div>
+  <div class="tab-pane" id="f">...</div>
+  <div class="tab-pane" id="g">...</div>
+  </div>
+  </div>
+</div>
+</div>
+
+<p style="padding-top:120px"></p>
+
+  <div class="row scroll-btn3">
+   <div class="col-sm-10 col-sm-offset-1">
+
+   <h2 style="color:gray;"> <i class="fa fa-server" aria-hidden="true"></i> Database</h2>
+
+   </div>
+  </div>
+
+<p style="padding-top:120px"></p>
+
+  <div class="row scroll-btn3">
+   <div class="col-sm-10 col-sm-offset-1">
+
+   <h2 style="color:gray;"> <i class="fa fa-paint-brush" aria-hidden="true"></i> Design</h2>
+
+   </div>
+  </div>
+
+  <p style="padding-top:120px"></p>
+
+    <div class="row scroll-btn3">
+     <div class="col-sm-10 col-sm-offset-1">
+
+     <h2 style="color:gray;"> <i class="fa fa-laptop" aria-hidden="true"></i> Operating systems</h2>
+
+     </div>
+    </div>
+
+    <p style="padding-top:120px"></p>
+
+      <div class="row scroll-btn3">
+       <div class="col-sm-10 col-sm-offset-1">
+
+       <h2 style="color:gray;"> <i class="fa fa-book" aria-hidden="true"></i> Languages</h2>
+
+       </div>
+      </div>
+
+      <p style="padding-top:120px"></p>
+
+        <div class="row scroll-btn3">
+         <div class="col-sm-10 col-sm-offset-1">
+
+         <h2 style="color:gray;"> <i class="fa fa-arrows-h" aria-hidden="true"></i> Other</h2>
+
+         </div>
+        </div>
+
+
+  <p style="padding-top:320px"></p>
 
 <footer class="row-footer">
     <div class="container">
@@ -119,7 +230,22 @@ function scrollBtn(){
         $('.scroll-btn').fadeIn(1000);
       else
         $('.scroll-btn').fadeOut(1000);
+
+        if ( $(window).scrollTop() > 370 )
+        $('.scroll-btn2').fadeIn(1000);
+      else
+        $('.scroll-btn2').fadeOut(1000);
+
+        if ( $(window).scrollTop() > 500 )
+        $('.scroll-btn3').fadeIn(1000);
+      else
+        $('.scroll-btn3').fadeOut(1000);
+
+
       };
+
+
+
 </script>
 
 
