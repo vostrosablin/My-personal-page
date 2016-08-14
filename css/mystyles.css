@@ -251,3 +251,23 @@ body{
      display:none !important;
  }
 }
+
+@media (min-width: 0px) and (max-width: 1200px) {
+.description2{
+     font-size:20px !important;
+ }
+ .description1{
+      font-size:20px !important;
+  }
+  .description3{
+       font-size:20px !important;
+   }
+   .description4{
+        font-size:20px !important;
+    }
+    .description5{
+         font-size:20px !important;
+     }
+}
+
+.description2
