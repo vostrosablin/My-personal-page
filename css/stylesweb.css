@@ -30,3 +30,20 @@
 ul li a{
   color: gray;
 }
+.front-end{
+  background-image: url(../img/front-end.jpg);
+  background-size: cover;
+  height: 400px;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+.description{
+/*   position: absolute;
+  margin: 150px 0px 0px 700px;
+  width: 700px;
+  height: 200px; */
+  font-size: 30px;
+  color: white;
+  text-align: justify;
+}
