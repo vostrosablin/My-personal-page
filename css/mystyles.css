@@ -104,7 +104,8 @@ h2{
   display: none;
 }
 .infoback{
-  background-image: url(../img/scienceimg.jpg);
+  /* background-image: url(../img/scienceimg.jpg); */
+  background-image: url(../img/about.png);
   background-size: cover !important;
   height: 420px;
   background-attachment: fixed;
@@ -268,6 +269,9 @@ body{
     .description5{
          font-size:20px !important;
      }
+     .description{
+          font-size:20px !important;
+      }
 }
 
 .description2
