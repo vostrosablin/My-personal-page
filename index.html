@@ -41,9 +41,14 @@
 
 
 
-<body>
-
-
+<body onload="myFunction()" style="margin:0;">
+    <p style="padding-top:100px"></p>
+<div id="loader" class="row">
+  <div class="col-xs-2 col-xs-offset-5">
+<img src="./img/box.gif"  />
+</div>
+</div>
+<div id="myDiv" style="display:none;">
 <header class="jumbotron">
 
             <div class="row ">
@@ -200,15 +205,33 @@ in general. Follow my thoughts and  check out my microblog about literature! For
         </div>
     </footer>
 
+</div>
+
+
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
-   <script>
-   $(document).ready(function () {
-  $('img.hidden').fadeIn(3000).removeClass('hidden');
+  <script>
+  var myVar;
+
+  function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+  }
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "inline";
+    $('img.hidden').fadeIn(3000).removeClass('hidden');
     $('div.hidden').fadeIn(3000).removeClass('hidden');
-  });
+  }
+  </script>
+
+   <script>
+  // $(document).ready(function () {
+  //$('img.hidden').fadeIn(3000).removeClass('hidden');
+  //$('div.hidden').fadeIn(3000).removeClass('hidden');
+  //});
    </script>
   <script>
    $(document).ready(
