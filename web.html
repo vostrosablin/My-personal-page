@@ -18,6 +18,15 @@
 
 </head>
 
+
+<body onload="myFunction()" style="margin:0;">
+    <p style="padding-top:0px"></p>
+<div id="loader" class="row">
+  <div class="col-xs-2 col-xs-offset-2 col-sm-offset-5">
+<img src="./img/box.gif"  />
+</div>
+</div>
+<div id="myDiv" style="display:none;">
 <div style="overflow: hidden;">
 <header class="jumbotron" >
 
@@ -50,7 +59,7 @@
 <div class="front-end">
   <p style="padding-top:100px"></p>
 <div class="container">
-  <div class=" col-sm-12 description ">
+  <div class=" col-sm-12 description hidden">
     My experience is not quite reach for the moment but still I'm able to make some fancy websites. The one you
     are currently on is a good example of my possibilties. I have some main knowledge about the responsive design and I'm always continue
     to study new technologies of the web developement.
@@ -308,10 +317,25 @@
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <script>
-$(document).ready(function () {
- $('div.hidden').fadeIn(3000).removeClass('hidden');
- $('img.hidden').fadeIn(3000).removeClass('hidden');
-});
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "inline";
+  $('img.hidden').fadeIn(3000).removeClass('hidden');
+  $('div.hidden').fadeIn(3000).removeClass('hidden');
+}
+</script>
+
+<script>
+//$(document).ready(function () {
+ //$('div.hidden').fadeIn(3000).removeClass('hidden');
+ //$('img.hidden').fadeIn(3000).removeClass('hidden');
+//});
 
 $(document).ready(
   function DocumentLoad()
@@ -342,6 +366,6 @@ function scrollBtn(){
 
 
 </script>
-
+</body>
 
 </html>
